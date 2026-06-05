@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!--
+    Project: Web-X | Portfolio Website
+    Developer: Mohanish Janjan (github.com/mohanishjanjan)
+    Year: 2026
+  -->
+
+  <!-- 1. CORE CONFIGURATION -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- 2. SEARCH ENGINE OPTIMIZATION -->
+  <title>Mohanish Janjan | Web-X | Portfolio Website</title>
+  <meta name="description"
+    content="Portfolio of Mohanish Janjan, a developer specializing in Web Development, C/C++, Java, and Python. Explore my latest projects, software tools, and technical skills." />
+  <meta name="author" content="Mohanish Janjan" />
+  <meta name="theme-color" content="#000000" />
+
+  <!-- 3. CRAWLER & CANONICAL ROUTING -->
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://mohanishjanjan.github.io/" />
+
+  <!-- 4. OPEN GRAPH SOCIAL PROTOCOL -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Mohanish Janjan | Aspiring Developer & Computer Science Student" />
+  <meta property="og:description"
+    content="Web-X | Portfolio of Mohanish Janjan, a developer specializing in Web Development, C/C++, Java, and Python." />
+  <meta property="og:url" content="https://mohanishjanjan.github.io/" />
+  <meta property="og:image" content="https://mohanishjanjan.github.io/preview.png" />
+
+
+  <!-- 5. Twitter / X Specific Tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://mohanishjanjan.github.io/" />
+  <meta name="twitter:title" content="Mohanish Janjan | Web-X Portfolio" />
+  <meta name="twitter:description"
+    content="Portfolio of Mohanish Janjan, a developer specializing in Web Development, C/C++, Java, and Python." />
+  <meta name="twitter:image" content="https://mohanishjanjan.github.io/preview.png" />
+
+  <!-- 6. TAB ICON -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <!-- The Fallback for older browsers -->
+  <link rel="icon" type="image/png" href="favicon.png" />
+
+  <!-- 7. FONT LOADING ENGINE (Google Fonts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&display=swap"
+    rel="stylesheet" />
+
+  <!-- 8. ICON ASSETS LIBRARY -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- 9. MAIN STYLESHEET -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<!--MAIN BODY--->
+
+<body>
+  <!--HEADER-->
+  <header class="header">
+    <!--NAVBAR-->
+    <nav class="navbar">
+      <div class="logo">
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="nav-triangle">
+          <polygon points="5,10 95,10 50,85" fill="none" stroke="#ffffff" stroke-width="4" />
+          <polygon points="18,20 82,20 50,72" fill="none" stroke="aqua" stroke-width="2" opacity="0.7" />
+        </svg>
+        <span class="webname">Web-X</span>
+      </div>
+      <!--NAVLINKS-->
+      <ul class="navlinks">
+        <li>
+          <a href="#home" class="active"><i class="fa-solid fa-house"></i>Home</a>
+        </li>
+        <!-- <li><a href="#about">About Me</a></li> -->
+        <!-- update if about section is added -->
+        <li>
+          <a href="#projects"><i class="fa-solid fa-layer-group"></i>Projects</a>
+        </li>
+        <li>
+          <a href="#skills"><i class="fa-solid fa-code"></i>Skills</a>
+        </li>
+        <li>
+          <a href="#social"><i class="fa-solid fa-hashtag"></i>Social</a>
+        </li>
+      </ul>
+      <!--HEADER RIGHT-->
+      <div class="header-right">
+        <a href="https://www.linkedin.com/in/mohanishjanjan" target="_blank" class="btn-resume">Connect</a>
+        <div class="menu-dots" id="menu-icons">&#8942;</div>
+      </div>
+    </nav>
+  </header>
+  <!--MAIN-->
+  <main>
+    <!--HOME SECTION-->
+    <section id="home" class="hero">
+      <canvas id="network-canvas"></canvas>
+      <h2>Hello, I'm</h2>
+      <h1>Mohanish Janjan.</h1>
+      <h3>Computer Science Student | Future App Developer</h3>
+      <p>
+        Welcome to my digital world! I’m a passionate Computer Science student
+        obsessed with tech and machines, driven by an endless curiosity to
+        understand how everything works. Explore my work to see my madness in
+        action!
+      </p>
+      <a href="#projects" class="btn-view-projects">View My Projects</a>
+    </section>
+    <!-- ABOUT SECTION -->
+    <!--  <section id="about" class="about">
+            <h2 class="section-title">About Me!</h2>
+        </section> -->
+
+    <!--PROJECTS SECTION-->
+    <section id="projects" class="project-container">
+      <h2 class="section-title">My Projects!</h2>
+      <div class="card">
+        <h3>Web-X | Portfolio</h3>
+        <p>A portfolio website to showcase my coding skills and projects.</p>
+        <p><strong>Tech:</strong> HTML, CSS, JavaScript & GitHub</p>
+        <a href="index.html">View Site</a>
+      </div>
+      <div class="card">
+        <h3>MaxKit</h3>
+        <p>
+          A comprehensive academic toolkit app for college students.
+          (Currently in Development)
+        </p>
+        <p><strong>Tech:</strong> React Native & Node.js</p>
+      </div>
+      <div class="card">
+        <h3>Arduino LED Controller</h3>
+        <p>
+          Developed in 2020, this Arduino circuit connects to a series of LED
+          lights. It integrates with mobile apps to allow wireless control via
+          digital buttons and voice commands.
+        </p>
+        <p><strong>Tech:</strong> Arduino Uno & HC-05 BT Module</p>
+      </div>
+      <div class="card">
+        <h3>Ultrasonic Proximity Sensor</h3>
+        <p>
+          Built in 2025, this Arduino prototype processes real-time sensor
+          data to measure the distance of approaching obstacles
+        </p>
+        <p><strong>Tech:</strong> Arduino Uno & HC-SR04 Sensor</p>
+      </div>
+    </section>
+
+    <!--SKILLS SECTION-->
+    <section id="skills" class="skills">
+      <h2 class="section-title">My Skills!</h2>
+      <div class="skill-category">
+        <h3 class="category-subtitle">LANGUAGES</h3>
+        <div class="skill-container">
+          <div class="skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML"
+              class="skill-icon" />
+            <h3>HTML</h3>
+          </div>
+          <div class="skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS"
+              class="skill-icon" />
+            <h3>CSS</h3>
+          </div>
+          <div class="skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JS"
+              class="skill-icon" />
+            <h3>JavaScript</h3>
+          </div>
+          <div class="skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP"
+              class="skill-icon" />
+            <h3>PHP</h3>
+          </div>
+          <div class="skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++"
+              class="skill-icon" />
+            <h3>C/C++</h3>
+          </div>
+          <div class="skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java"
+              class="skill-icon" />
+            <h3>Java</h3>
+          </div>
+          <div class="skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"
+              class="skill-icon" />
+            <h3>Python</h3>
+          </div>
+          <!-- <div class="skill-card">
+                        <img src=""
+                            alt="SQL" class="skill-icon">
+                        <h3>SQL</h3>
+          </div> -->
+        </div>
+      </div>
+      <div class="skill-category">
+        <h3 class="category-subtitle">TOOLS & PLATFORMS</h3>
+        <div class="skill-container">
+          <div class="skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="GitHub"
+              class="skill-icon white-skill-icon" />
+            <h3>GitHub</h3>
+          </div>
+          <div class="skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg"
+              alt="VS Code" class="skill-icon" />
+            <h3>VS Code</h3>
+          </div>
+          <div class="skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/eclipse/eclipse-original.svg"
+              alt="Eclipse" class="skill-icon" />
+            <h3>Eclipse</h3>
+          </div>
+          <div class="skill-card">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/androidstudio/androidstudio-original.svg"
+              alt="Android Studio" class="skill-icon" />
+            <h3>Android Studio</h3>
+          </div>
+          <div class="skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="MySQL"
+              class="skill-icon" />
+            <h3>MySQL</h3>
+          </div>
+          <div class="skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/canva/canva-original.svg" alt="Canva"
+              class="skill-icon" />
+            <h3>Canva</h3>
+          </div>
+          <!-- <div class="skill-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" 
+                            alt="Figma" class="skill-icon white-skill-icon">
+                        <h3>Figma</h3>
+                    </div>
+                    <div class="skill-card">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/python.svg" 
+                            alt="Antigravity" class="skill-icon white-skill-icon">
+                        <h3>Antigravity</h3>
+                    </div> -->
+          <div class="skill-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" alt="Linux"
+              class="skill-icon" />
+            <h3>Linux</h3>
+          </div>
+        </div>
+      </div>
+      <!--  <div class="skill-category">
+        <h3 class="category-subtitle">Others</h3>
+        <div class="skill-container">
+            <div class="skill-card">
+                <img src="" alt="" class="skill-icon">
+                <h3></h3>
+            </div>
+        </div>
+    </div> -->
+    </section>
+
+    <!--SOCIAL SECTION-->
+    <section id="social" class="social">
+      <h2 class="section-title">Connect with me!</h2>
+      <div class="social-container">
+        <div class="social-links">
+          <a href="mailto:mohanishjanjan1@gmail.com" class="social-card">
+            <div class="mail-icon">✉</div>
+            <span>Email</span>
+          </a>
+          <a href="https://linkedin.com/in/mohanishjanjan" target="_blank" class="social-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
+              alt="LinkedIn" />
+            <span>LinkedIn</span>
+          </a>
+          <a href="https://github.com/mohanishjanjan" target="_blank" class="social-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"
+              class="white-icon" />
+            <span>GitHub</span>
+          </a>
+          <a href="https://leetcode.com/u/mohanish1" target="_blank" class="social-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png" alt="LeetCode"
+              width="30" />
+            <span>LeetCode</span>
+          </a>
+          <a href="https://x.com/mohanishjanjan" target="_blank" class="social-card">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/twitter/twitter-original.svg" alt="Twitter"
+              class="white-icon" />
+            <span>Twitter (X) </span>
+          </a>
+          <a href="https://discord.com/users/opdarkknight" target="_blank" class="social-card">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/discord.svg" alt="Discord"
+              class="white-icon" />
+            <span>Discord</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!--FOOTER-->
+  <footer class="footer">
+    <div class="footer-top">
+      <!-- Left Column: Glowing Logo & Brand Heading -->
+      <div class="footer-brand-block">
+        <!-- Custom double-polygon configuration matching image_4b6fbe.png -->
+        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="glowing-triangle">
+          <polygon points="5,10 95,10 50,85" fill="none" stroke="#ffffff" stroke-width="4" />
+          <polygon points="18,20 82,20 50,72" fill="none" stroke="aqua" stroke-width="2" opacity="0.7" />
+        </svg>
+        <h3>Web-X <span class="brand-split">|</span> Mohanish Janjan</h3>
+      </div>
+      <!-- Central Vertical Line -->
+      <div class="vertical-line"></div>
+      <!-- Right Column: -->
+      <div class="footer-links-block">
+        <h3>CONNECT</h3>
+        <div class="inline-socials">
+          <a href="https://linkedin.com/in/mohanishjanjan" target="_blank">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" alt="LinkedIn" />
+            LinkedIn
+          </a>
+          <a href="https://github.com/mohanishjanjan" target="_blank">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/github.svg" alt="GitHub" />
+            GitHub
+          </a>
+          <a href="https://x.com/mohanishjanjan" target="_blank">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/twitter/twitter-original.svg" alt="Twitter"
+              class="white-icon" />
+            Twitter (X)
+          </a>
+          <a href="mailto:mohanishjanjan@gmail.com" target="_blank">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/gmail.svg" alt="Email" />
+            Email
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-meta-bottom">
+      <p>&copy; 2026 Web-X | Mohanish Janjan. All rights reserved.</p>
+      <p class="author-credit">
+        Designed & Coded by <strong>Mohanish Janjan.</strong>
+      </p>
+    </div>
+  </footer>
+</body>
+<script src="script.js"></script>
+
+</html>
